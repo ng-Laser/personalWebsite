@@ -1,0 +1,100 @@
+/* font-face copied from square space code, otherwise mine */
+@font-face{
+font-family:futura-pt;
+src:url(https://use.typekit.net/af/f73c9d/000000000000000000010097/27/l?subset_id=2&fvd=n8&v=3);
+}
+@font-face{
+font-family:proxima-nova;
+src:url(https://use.typekit.net/af/69ead1/00000000000000003b9aefbd/27/l?subset_id=2&fvd=i3&v=3)
+}
+
+body{
+	background-color: #FCFCFC;
+	font-family: "futura-pt";
+}
+header {
+	letter-spacing: 1px;
+	display: flex;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 30px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-style: normal;
+}
+
+header h1{
+	flex-shrink: 0;
+}
+
+#logo_name {
+	color: rgb(34, 34, 34);
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 50.4px;
+	text-decoration: none;
+	text-decoration-color: rgb(34, 34, 34);
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	text-transform: uppercase;
+}
+
+nav a{
+	color: rgb(153, 153, 153);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+	text-decoration: none;
+	text-decoration-color: rgb(153, 153, 153);
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+#pictures-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap:wrap;
+	margin-top:-10px;
+}
+
+.project-picture{
+	height: 300px;
+	width: 300px;
+	margin: 20px;
+	border: 5px solid white;
+}
+.project-picture:hover{
+	height: 370px;
+	width: 370px;
+	border: 10px solid white;
+}
+
+#descriptions-container, #title{
+	margin-left:20px;
+}
+
+.projects-description-div h2, #title{
+	color: rgb(34, 34, 34);
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 1.8px;
+	line-height: 45px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.projects-description-div p{
+	color: rgb(87, 87, 87);
+	font-family: "proxima-nova";
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 15px;
+	text-transform: none;
+}

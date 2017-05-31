@@ -1,0 +1,17 @@
+#myImage{
+	width: 500px;
+	height:500px;
+	border-radius:50%;
+}
+
+#about-content{
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-left:5vw;
+	margin-right:5vw;
+}
+
+#bio {
+	width: 30vw;
+}

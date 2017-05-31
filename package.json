@@ -1,0 +1,19 @@
+{
+  "name": "personal-wesbite-cs193x",
+  "version": "1.0.0",
+  "description": "A website that lists my experiences, also final project for CS193X",
+  "main": "script.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-Laser/personalWebsite.git"
+  },
+  "author": "Noa Glaser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ng-Laser/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/ng-Laser/personalWebsite#readme"
+}

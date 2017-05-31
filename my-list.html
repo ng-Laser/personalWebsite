@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Very much inspired by square space alley template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Noa Glaser - Projects</title>
+	<link rel="stylesheet" href="my-list.css" type="text/css">
+	</head>
+<body>
+	<header>
+		<h1><a id ="logo_name" href="./index.html">Noa Glaser</a></h1>
+		<nav>
+			<a href="./index.html">About</a>
+			<a href="https://www.linkedin.com/in/noa-glaser-37a257a6/">Professional Experience</a>	
+			<a href="./my-list.html">Projects</a>
+		</nav>
+	</header>
+	<h2 id="title">My Projects</h2>
+	<div id="pictures-container">
+		<a href="#drone-description"><img class="project-picture" src="images/drone.jpg"></a>
+		<a href="#robot-description"/><img class="project-picture" src="images/robot.jpg"></a>
+		<a href="#media-bias-description"/><img class="project-picture" src="images/media_bias.png"></a>
+	</div>
+	<div id="descriptions-container">
+		<div class="projects-description-div" id="drone-description">
+			<h2>SUAVE UAV</h2>
+			<p>
+			The  Stanford Unmanned Aerial Vehicles Enthusiasts Engineers Entrepreneurs, or SUAVE, is a student organization which hosts classes, lecture series, projects and flydays with all things UAVs. I served as a SUAVE co-presdient, and financial officer. One of my favorite events hosted by the club is the SUAVE 101, a two week zero-to-hero course that, throughout a quarter, takes students from never having seen a UAV to building, flying and executing autonomous missions. The course develops familiarity with the hardware componenets and basic UAV principles, RC flying and ground control software. I have both participated and mentored the 101 course. Pictured is a SUAVE 101 final quad-rotor project. 
+			</p>
+		</div>
+		<div class="projects-description-div" id="robot-description">
+			<h2>ME210 Robot</h2>
+			<p>
+			ME210/EE118 is an intense stanford Mechatronics course. The final project in the course is building an autonomous robot from very low level componenets to compete in a game challenge. The picture featuers the final project. 
+			The year I completed the course the challenge was to autnomously orient from a randomized position and orientation and navigate to shooting balls into very small goals on the field. Many all nighters, and unhealthy snacks later, I learned a ton about robust HW/circuit design, hands on HW debugging and development, timers and concurrency as well as writing drivers to interface with actuators, firmwares, and sensors.
+			</p>
+		</div>
+		<div class="projects-description-div" id="media-bias-description">
+			<h2>Machine Learning and Media Bias</h2>
+			<p>
+			For a long time, I have been interested in media bias and objectivity in journalism. I suppose this topic now has a higher profile with the advent of fake news and echo chambers. I wanted to see how machine learning can help tackle this issue and so last year focused my CS229 final project on characterizing media bias. I teamed up with John Sholar for this partner project but we worked on two distinct approaches. I will be discussing my work in more depth; his approach studying article title n-grams. 
+			</p>
+			<p>
+			I hypothesized that media bias manifests in the selection of which events a certain news outlet chooses to report and which they choose to ignore. 
+			To avoid introducing human bias/personal perspectives the analysis, I researched unsupervised clustering, which doesn't use human-generated labels.
+			I created a landscape of news outlet perspectives by clustering groups of newspapers based on which events they report. For the clustering algorithm, Gaussian Mixture Models and Hierarchical Clustering Models had similar results and so I proceeded with K-Nearest-Neighbors.
+			For data, I used EventRegistry.org, an aggregation of news articles from over 100,000 news sources and groupings of events.
+			To account for magazine regional origin and prolificacy, I explored feature engineering and normalization techniques. 
+			For benchmarking, I asked Stanford students from diverse political backgrounds and event familiarity to rate the classifications. 
+			</p>
+			<p>
+			I loved using Machine Learning to address an issue that I personally care a lot about and which I think has great societal importance. Machine Learning is proving to have unbelievable potential for social good. During CS109, I was motivating by your work in substantially improving education through objective, data driven, analysis. One of my personal reasons for pursuing the CS coterm is honing this skill set for analysis to broadening the impact I could have on social problems.
+			</p>
+		</div>
+	</div>
+	
+</body>
+</html>
