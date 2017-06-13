@@ -1,10 +1,11 @@
 {
-  "name": "personal-wesbite-cs193x",
+  "name": "personal_website",
   "version": "1.0.0",
   "description": "A website that lists my experiences, also final project for CS193X",
   "main": "script.js",
   "scripts": {
-    "test": "start"
+    "start": "node commentsServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/ng-Laser/personalWebsite/issues"
   },
-  "homepage": "https://github.com/ng-Laser/personalWebsite#readme"
+  "homepage": "https://github.com/ng-Laser/personalWebsite#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.28"
+  }
 }
