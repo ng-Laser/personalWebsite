@@ -18,7 +18,7 @@ async function startServer() {
   db = await MongoClient.connect('mongodb://noag:helloThere@ds123722.mlab.com:23722/heroku_ssjp7hlt');
   collection = db.collection('comments');
   // Now every route can safely use the db and collection objects.
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
   console.log('Listening on port 3000');
 }
 startServer();
@@ -44,7 +44,7 @@ async function getQuery(req, res) {
   const cursor = await collection.findOne({field: value});
   res.json(cursor);
 }
-app.get('/:field/:value',  getQuery);
+app.get('/query/:field/:value',  getQuery);
 
 
 async function onPost(req, res) {
