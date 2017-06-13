@@ -8,15 +8,12 @@ const jsonParser = bodyParser.json();
 
 app.use(express.static('public'));
 
-const DATABASE_NAME = 'NG_PersonalWebsite';
-const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
-
 let db = null;
 let collection = null;
 
 async function startServer() {
   // Set the db and collection variables before starting the server.
-  db = await MongoClient.connect(MONGO_URL);
+  db = await MongoClient.connect('mongodb://localhost:27017/NG_PersonalWebsite');
   collection = db.collection('comments');
   // Now every route can safely use the db and collection objects.
   await app.listen(3000);
