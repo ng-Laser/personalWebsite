@@ -13,7 +13,9 @@ let collection = null;
 
 async function startServer() {
   // Set the db and collection variables before starting the server.
-  db = await MongoClient.connect('mongodb://localhost:27017/NG_PersonalWebsite');
+  // mongodb://<dbuser>:<dbpassword>@ds123722.mlab.com:23722/heroku_ssjp7hlt
+  //mongodb://dbuser:dbpass@ref:mongolab-objective-18820:port/dbname
+  db = await MongoClient.connect('mongodb://noag:helloThere@ds123722.mlab.com:23722/heroku_ssjp7hlt');
   collection = db.collection('comments');
   // Now every route can safely use the db and collection objects.
   await app.listen(3000);
