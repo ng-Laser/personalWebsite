@@ -125,7 +125,15 @@ p , fieldset{
 }
 
 #bio {
-	width: 30vw;
+	width: 45vw;
+}
+
+#bio h2{
+margin-top: 0px;
+}
+tiny{
+	font-size: 3px;
+	line-height: normal;
 }
 
 /******************************************/
